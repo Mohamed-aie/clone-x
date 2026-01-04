@@ -2,6 +2,7 @@ const createError = require('../middleware/error');
 const tweetModel = require('../models/tweet.model');
 const userModel = require('../models/user.model');
 const verifyToken = require('../middleware/auth');
+const env = require('../config/env');
 
 
 const getAll = async (req, res,next) => {

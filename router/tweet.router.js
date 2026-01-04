@@ -3,6 +3,8 @@ const router = express.Router();
 const tweetController = require('../controllers/tweet.controller');
 const {verifyToken} = require('../middleware/auth');
 
+
+
 router.get('/all', verifyToken,tweetController.getAll);
 router.post('/add', verifyToken,tweetController.postTweet);
 router.delete('/delete/:id', verifyToken,tweetController.deleteTweet);

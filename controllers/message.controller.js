@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const createError = require('../middleware/error');
 const messageModel = require('../models/message.model');
+const env = require('../config/env');
 
 
 const sendMessage = async (req,res,next) => {

@@ -1,20 +1,4 @@
-// const nodemailer = require('nodemailer');
-// const ENV = require('../config/env');
 
-// const transporter = nodemailer.createTransport({
-//   host: ENV.MAIL_HOST,
-//   port: parseInt(ENV.MAIL_PORT), // Force le port en nombre
-//   secure: false, // TLS (STARTTLS) - obligatoire pour 587/2525 
-//   auth: {
-//     user: ENV.MAIL_USER,
-//     pass: ENV.MAIL_PASS,
-//   },
-//   tls :{
-//     rejectUnauthorized: false
-//   }
-// });
-
-// module.exports = transporter;
 const { MailtrapClient } = require("mailtrap");
 const ENV = require("../config/env");
 
