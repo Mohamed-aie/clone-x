@@ -1,4 +1,4 @@
-const app = require('./app');
+const app = require('./clone x/app');
 const ENV = require('./config/env');
 
 //PORT
